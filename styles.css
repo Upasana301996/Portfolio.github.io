@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&display=swap');
+
+body {
+    font-family: Inria Sans;
+    background-color: #17152E;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1510px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+strong {
+    color: #F2BA60;
+}
+
+.btn {
+    padding: 7px 21px;
+    border: 2px solid #F2BA60;
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+    margin-top: 5px;
+    display: inline-block;
+    transition: all 0.5s ease-out;
+}
+
+.btn:hover {
+    background-color: #F2BA60;
+    color: black;
+}
+
+h2 {
+    font-family: Abhaya Libre;
+    color: white;
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 75.5px;
+}
+
+/* Header */
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+
+header nav ul {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin: 0;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    margin-right: 38px;
+    font-family: Inria Sans;
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 38.37px;
+    text-align: left;
+}
+
+header .search {
+    width: 145px;
+    height: 39px;
+    background: #3A3847;
+    border: none;
+    outline: none;
+    border-radius: 41px;
+}
+
+header .search input {
+    width: 81%;
+    height: 100%;
+    background: transparent;
+    outline: none;
+    border: none;
+    margin-left: 15px;
+    background-image: url('img/search.svg');
+    background-repeat: no-repeat;
+    background-position: 95px;
+    color: white;
+}
+
+header .search input::placeholder {
+    color: white;
+}
+
+
+/* Intro */
+.intro {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro .text {
+    margin-right: 90px;
+}
+
+.intro .text h1 {
+    font-size: 38px;
+    font-family: Inria Sans;
+}
+
+.intro .text h1 span {
+    color: #F2BA60;
+}
+
+
+.intro .image img {
+    border: 4px solid #F2BA60;
+    border-radius: 100%;
+    width: 500px;
+}
+
+.intro {
+    color: white;
+    margin-top: 80px;
+}
+
+/* ABOUT ME */
+.about {
+    color: white;
+    margin-top: 155px;
+    margin-left: 199px;
+}
+
+.about div {
+    width: 80%;
+}
+
+.about h2 {
+    position: relative;
+    text-align: left;
+}
+
+.about h2::after {
+    content: " ";
+    position: absolute;
+    bottom: 3px;
+    width: 70px;
+    height: 3px;
+    background-color: #F2BA60;
+    left: 0;
+}
+
+.about p {
+    margin-top: -50px;
+    margin-left: 85px;
+    margin-bottom: 55px;
+    display: block;
+}
+
+/* SKILLS */
+
+.skills {
+    color: white;
+    margin-top: 80px;
+    margin-bottom: 40px;
+}
+
+.skills h2 {
+    text-align: center;
+}
+
+
+.skills .icons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+}
+
+.skills .icons div {
+    width: 18%;
+    height: 228px;
+    border-radius: 14px;
+    background: #3A3847;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+.skills .icons img {
+    width: 117px;
+    height: 140px;
+    object-fit: contain;
+}
+
+/* PORTFOLIO */
+.portfolio {
+    color: white;
+    margin-top: 110px;
+    margin-bottom: 40px;
+}
+
+.portfolio h2 {
+    text-align: center;
+}
+
+
+.portfolio .images {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+
+.portfolio .images img {
+    width: 26%;
+    height: 310px;
+    object-fit: cover;
+}
+
+/* Contact */
+.contact {
+    position: relative;
+    border: 1px solid #F2BA60;
+    border-left: none;
+    border-right: none;
+    color: white;
+    margin-top: 165px;
+    background: #2A293F;
+    padding: 75px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: -2;
+}
+
+.contact .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 55px;
+    justify-content: center;
+}
+
+.contact h2 {
+    position: absolute;
+    top: -41px;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100%;
+    text-align: center;
+    left: 0;
+}
+
+.contact .container div {
+    background-color: #17152E;
+    width: 219px;
+    padding: 10px 3px 10px 49px;
+    margin-bottom: 12px;
+    border-radius: 4px;
+    background-repeat: no-repeat;
+    background-size: 23px;
+    background-position: 16px 13px;
+}
+
+.contact .container .mail {
+    background-image: url("img/mail.svg");
+}
+
+.contact .container .phone {
+    background-image: url("img/phone.svg");
+}
+
+.contact .container .address {
+    background-image: url("img/map.svg");
+    background-size: 14px;
+    background-position: 18px 12px;
+}
+
+.contact .border-cutter {
+    position: absolute;
+    top: -1px;
+    width: 270px;
+    height: 101%;
+    background: #2A293F;
+    z-index: -1;
+}
+
+/* Footer */
+footer {
+    color: white;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+footer>div {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .icons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+footer .icons img {
+    width: 25px;
+    background: white;
+    border-radius: 100%;
+    padding: 3px;
+}
+
+footer p {
+    margin: 0;
+}
